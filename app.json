@@ -1,0 +1,6 @@
+{
+  "name": "prueba-nodeexpress",
+  "description": "Prueba de uso de node.js con express.js",
+  "repository": "https://github.com/ecrespo/prueba-nodeexpress.git",
+  "keywords": ["node", "express", "static"]
+}

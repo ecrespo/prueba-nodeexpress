@@ -1,0 +1,26 @@
+{
+  "name": "prueba-nodeexpress",
+  "version": "0.1.0",
+  "description": "Prueba de uso de node.js con express.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecrespo/prueba-nodeexpress.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Ernesto Crespo <ecrespo@gmail.com",
+  "license": "GPLv3"
+}
