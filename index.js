@@ -1,13 +1,12 @@
-var express = require('express')
-var app = express()
-
-app.set('port', (process.env.PORT || 5000))
-app.use(express.static(__dirname + '/public'))
-
-app.get('/', function(request, response) {
-  response.send('Hola mundo desde node.js!!!')
-})
-
-app.listen(app.get('port'), function() {
-  console.log("Node está corriendo en localhost:" + app.get('port'))
-})
+// se crea la instancia de http
+var http = require('http');
+// Se crea la instancia del servidor donde se define el tipo del Content-type como text/plain
+//Devuelve un hola mundo particular.
+var server = http.createServer(function (request, response) {
+        response.writeHead(200, {"Content-Type": "text/plain"});
+        response.end("Hola mundo desde un contenedor Docker con nodejs.");
+});
+//El servidor escuchará el puerto 8000.
+server.listen(5000);
+//se devuelve un mensaje en la consola que se ejecuta el servidor web.
+console.log("Server running at http://127.0.0.1:5000/");
